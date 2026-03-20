@@ -1,0 +1,9 @@
+services:
+  service:
+    container_name: service
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
